@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="UTF-8">
+	<title>CVPR19 Typography with Decor</title>
+    <style type="text/css">
+        body{
+        	background-color: white;
+        }
+        .links{
+        	text-decoration: none;
+        	color: blue;
+        }
+        .p2{
+        	padding-top: 20px;
+        	font-size: 25px;
+        }
+        .p1{
+        	text-align:justify;
+        	text-justify:inter-ideograph;
+        }
+    </style>
+</head>
+<body>
+	<div align="center" style="padding-top: 30px;">
+	<p>Accepted by CVPR 2019</p>
+	<p style="font-size:35px;">Typography with Decor: Intelligent Text Style Transfer</p>
+	<table style="width: 600px">
+		<tr>
+			<td>
+				<a href="mailto:daooshee@pku.edu.cn" class="links">Wenjing Wang</a>
+			</td>
+			<td>
+				<a href="mailto:liujiaying@pku.edu.cn" class="links">Jiaying Liu</a>
+			</td>
+			<td>
+				<a href="mailto:williamyang@pku.edu.cn" class="links">Shuai Yang</a>
+			</td>
+			<td>
+				<a href="mailto:guozongming@pku.edu.cn" class="links">Zongming Guo</a>
+			</td>
+		</tr>
+	</table>
+	</div>
+
+	<div align="left" style="padding-left: 200px; padding-right: 200px; padding-bottom: 20px;">
+
+	<p class='p2'> </p> 
+	<div align="center">
+		<img src="teasor.jpg" width="700px"> <br>
+	</div>
+	<div style="padding-left: 60px; padding-right: 60px;">
+	<p class='p1'> Figure 1. Text effects transfer results produced by the proposed method, where both the basal text effects and the decorative elements can be transferred to the target text
+	</p>
+	</div>
+
+	<p class='p2'> Abstract </p> 
+	<p class='p1'> Text effects transfer can dramatically make the text visually pleasing.
+In this paper, we present a novel framework to stylize the text with exquisite decor, which are ignored by the previous text stylization methods.
+Decorative elements pose a challenge to spontaneously handle basal text effects and decor, which are two different styles.
+To address this issue, our key idea is to learn to separate, transfer and recombine the decors and the basal text effect.
+A novel text effect transfer network is proposed to infer the styled version of the target text.
+The stylized text is finally embellished with decor where the placement of the decor is carefully determined by a novel structure-aware strategy.
+Furthermore, we propose a domain adaptation strategy for decor detection and a one-shot training strategy for text effects transfer, which greatly enhance the robustness of our network to new styles.
+We base our experiments on our collected topography dataset including 59,000 professionally styled text and demonstrate the superiority of our method over other state-of-the-art style transfer methods. </p>
+
+	<p class='p2'> Framework </p> 
+	<div align="center">
+		<img src="Framework.jpg" width="500px"> <br>
+	</div>
+	<p class='p1'> Figure 2. The proposed text style transfer framework. First, decorative elements are separated from the styled text. Then, text effects are transferred to the target text. Finally, the elements and the styled text are recomposed based on both the structure of the text and the spatial distribution of the decorative elements. </p>
+
+	<p class='p2'> Dataset </p> 
+	<div align="center">
+		<img src="Dataset.jpg" width="600px">
+	</div>
+	<p class='p1'> Figure 3. An overview of our styled text dataset. The proposed dataset including 60 different kinds of text effects with 52 English letters of 19 fonts, totally 59k images.</p>
+
+	<p class='p2'> Resources </p> 
+	<p class='p1'>
+		<ul style="line-height:15px">
+		　　<li> Code: <a href="https://github.com/daooshee/Typography-with-Decor" class="links"> GitHub </a></li>
+		　　<li> Dataset: <a href="https://drive.google.com/drive/u/1/folders/1eNYlxpGY7bU8nd36rlu12gkRTGSjxtKu?usp=drive_open" class="links"> Google Drive </a></li>
+		</ul>
+	</p>
+
+	<p class='p2'> Citation</p>
+	<p> @InProceedings{typography2019, <br>
+		&nbsp; &nbsp; author = {Wang, Wenjing and Liu, Jiaying and Yang, Shuai and Guo, Zongming}, <br>
+		&nbsp; &nbsp; title = {Typography with Decor: Intelligent Text Style Transfer}, <br>
+		&nbsp; &nbsp; booktitle = {The IEEE Conference on Computer Vision and Pattern Recognition (CVPR)}, <br>
+	   	&nbsp; &nbsp; month = {June}, <br>
+	   	&nbsp; &nbsp; year = {2019} <br>
+	} <br> 
+	</p>
+
+	<p class='p2'> Selected Results</p>
+	<div align="center">
+		<img src="comparison.jpg" width="500px">
+	</div>
+	<p class='p1'> Figure 4. Comparison with state-of-the-art methods on various text effects: (left-to-right) input example text effects, target text, Doodle [1], T-Effect [2], Our stylization results.
+	</p>
+
+	<p class='p2'> Reference</p>
+	<p class='p1'> [1] Alex J Champandard. Semantic style transfer and turning two-bit doodles into fine artworks. arXiv preprint arXiv:1603.01768, 2016.</p>
+	<p class='p1'> [2] ShuaiYang, JiayingLiu, ZhouhuiLian, and ZongmingGuo. Awesome typography: Statistics-based text effects transfer. In Proceedings of the IEEE Conference on Computer Vision and Pattern Recognition, pages 7464–7473, 2017.</p>
+
+</html>
